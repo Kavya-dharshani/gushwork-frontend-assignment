@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium HDPE Pipes &amp; Coils for Modern Infrastructure — product details, specifications, and custom quotes." />
+  <title>Mangalam | Premium HDPE Pipes &amp; Industrial Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky product bar: appears above nav when scrolling down past first fold -->
+  <header class="sticky-bar" id="stickyBar" aria-hidden="true">
+    <div class="sticky-bar__inner container">
+      <p class="sticky-bar__title">Premium HDPE Pipes &amp; Coils</p>
+      <p class="sticky-bar__price">₹4,80,000 – 7,90,000</p>
+      <button type="button" class="btn btn--primary btn--sm">Get Custom Quote</button>
+    </div>
+  </header>
+
+  <!-- Primary site navigation (fixed below sticky bar when active) -->
+  <header class="site-nav" id="siteNav">
+    <div class="site-nav__inner container">
+      <a href="#" class="site-nav__logo" aria-label="Mangalam home">
+        <img src="assets/images/mobile_logo.svg" alt="Mangalam" width="140" height="32" />
+      </a>
+
+      <nav class="site-nav__links" aria-label="Main navigation">
+        <a href="#about">About Us</a>
+        <button type="button" class="site-nav__dropdown" aria-haspopup="true">
+          Products
+          <img src="assets/images/caretdown.svg" alt="" width="16" height="16" aria-hidden="true" />
+        </button>
+        <a href="#contact" class="btn btn--primary btn--nav">Contact Us</a>
+      </nav>
+
+      <button
+        type="button"
+        class="site-nav__toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" hidden>
+    <button type="button" class="mobile-menu__link" data-close-menu>About Us</button>
+    <button type="button" class="mobile-menu__link mobile-menu__link--dropdown" aria-haspopup="true">
+      Products
+      <img src="assets/images/caretdown.svg" alt="" width="16" height="16" aria-hidden="true" />
+    </button>
+    <a href="#contact" class="btn btn--primary" data-close-menu>Contact Us</a>
+    <button type="button" class="mobile-menu__close" data-close-menu>Close Menu</button>
+  </div>
+  <div class="mobile-menu__backdrop" id="menuBackdrop" hidden aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- First fold: product hero with image carousel -->
+    <section class="hero" id="hero" aria-labelledby="productTitle">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="#">Products</a>
+          <img src="assets/images/CaretRight.svg" alt="" width="16" height="16" aria-hidden="true" />
+          <span aria-current="page">Two For One Twister</span>
+        </nav>
+
+        <div class="hero__grid">
+          <!-- Image carousel -->
+          <div class="gallery" id="gallery">
+            <div class="gallery__main" id="galleryMain">
+              <img
+                id="mainImage"
+                src="assets/images/hero_first_image.png"
+                alt="HDPE Pipes - View 1"
+                width="530"
+                height="500"
+              />
+
+              <button type="button" class="gallery__arrow gallery__arrow--prev" id="prevBtn" aria-label="Previous image">
+                <img src="assets/images/left-arrow.png" alt="" width="40" height="40" aria-hidden="true" />
+              </button>
+              <button type="button" class="gallery__arrow gallery__arrow--next" id="nextBtn" aria-label="Next image">
+                <img src="assets/images/right-arrow.png" alt="" width="40" height="40" aria-hidden="true" />
+              </button>
+
+              <span class="gallery__counter" id="imageCounter" aria-live="polite">1 / 5</span>
+            </div>
+
+            <div class="gallery__thumbs" id="thumbList" role="tablist" aria-label="Product images">
+              <!-- Thumbnails injected by script -->
+            </div>
+
+            <!-- Zoom preview panel (desktop hover) -->
+            <div class="zoom-panel" id="zoomPanel" aria-hidden="true"></div>
+            <!-- Magnifier lens -->
+            <div class="zoom-lens" id="zoomLens" aria-hidden="true">
+              <img src="assets/images/glass.svg" alt="" width="48" height="48" aria-hidden="true" />
+            </div>
+          </div>
+
+          <!-- Product details -->
+          <div class="product-info">
+            <div class="cert-badges">
+              <span class="cert-badge">
+                <img src="assets/images/bis_certificate.svg" alt="" width="20" height="20" aria-hidden="true" />
+                BIS Certified
+              </span>
+              <span class="cert-badge">
+                <img src="assets/images/iso_certificate.svg" alt="" width="20" height="20" aria-hidden="true" />
+                ISO Certified
+              </span>
+              <span class="cert-badge">
+                <img src="assets/images/ce_certificate.svg" alt="" width="20" height="20" aria-hidden="true" />
+                CE Certified
+              </span>
+            </div>
+
+            <h1 id="productTitle" class="product-info__title">
+              Premium HDPE Pipes &amp; Coils for Modern Infrastructure
+            </h1>
+
+            <ul class="feature-list">
+              <li>
+                <img src="assets/images/CheckCircle.svg" alt="" width="20" height="20" aria-hidden="true" />
+                Leak-Proof Fusion Joints
+              </li>
+              <li>
+                <img src="assets/images/CheckCircle.svg" alt="" width="20" height="20" aria-hidden="true" />
+                Chemical Resistance
+              </li>
+              <li>
+                <img src="assets/images/CheckCircle.svg" alt="" width="20" height="20" aria-hidden="true" />
+                50+ Year Service Life
+              </li>
+              <li>
+                <img src="assets/images/CheckCircle.svg" alt="" width="20" height="20" aria-hidden="true" />
+                Flexible Installation
+              </li>
+            </ul>
+
+            <div class="price-card">
+              <p class="price-card__label">Price Range</p>
+              <p class="price-card__value">₹4,80,000 - 7,90,000</p>
+              <div class="price-card__tags">
+                <span class="tag tag--amber">Shipping: 6-12 days</span>
+                <span class="tag tag--amber">Returns: If returned within 7 days</span>
+                <span class="tag tag--gray">Certifications: ISO Certified, BIS Certified</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <button type="button" class="btn btn--primary">Get Custom Quote</button>
+              <button type="button" class="btn btn--outline">
+                View Technical Specs
+                <img src="assets/images/CaretRight-2.svg" alt="" width="16" height="16" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="brand-strip">
+          <p>Trusted by Hundreds of Companies Globally</p>
+          <div class="brand-strip__logos" aria-hidden="true">
+            <img src="assets/images/euroflex.svg" alt="Euroflex" width="122" height="32" />
+            <img src="assets/images/euroflex.svg" alt="" width="122" height="32" />
+            <img src="assets/images/euroflex.svg" alt="" width="122" height="32" />
+            <img src="assets/images/euroflex.svg" alt="" width="122" height="32" class="hide-mobile" />
+            <img src="assets/images/euroflex.svg" alt="" width="122" height="32" class="hide-tablet" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Below-the-fold content for scroll demo -->
+    <section class="section specs" id="specs" aria-labelledby="specsTitle">
+      <div class="container">
+        <h2 id="specsTitle" class="section__title">Technical Specifications at a Glance</h2>
+        <p class="section__subtitle">
+          Comprehensive performance data demonstrating our commitment to quality and engineering excellence.
+        </p>
+
+        <div class="table-wrap">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th scope="col">Parameter</th>
+                <th scope="col">Specification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pipe Diameter Range</td>
+                <td>20mm to 1600mm (3/4&quot; to 63&quot;)</td>
+              </tr>
+              <tr>
+                <td>Pressure Ratings</td>
+                <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
+              </tr>
+              <tr>
+                <td>Standard Dimension Ratio</td>
+                <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
+              </tr>
+              <tr>
+                <td>Operating Temperature</td>
+                <td>-40°C to +80°C (-40°F to +176°F)</td>
+              </tr>
+              <tr>
+                <td>Service Life</td>
+                <td>50+ Years (at 20°C, PN 10)</td>
+              </tr>
+              <tr>
+                <td>Material Density</td>
+                <td>0.95 - 0.96 g/cm³</td>
+              </tr>
+              <tr>
+                <td>Certification Standards</td>
+                <td>IS 5984, ISO 4427, ASTM D3035</td>
+              </tr>
+              <tr>
+                <td>Joint Type</td>
+                <td>Butt Fusion, Electrofusion, Mechanical</td>
+              </tr>
+              <tr>
+                <td>Coil Lengths</td>
+                <td>Up to 500m (for smaller diameters)</td>
+              </tr>
+              <tr>
+                <td>Country of Origin</td>
+                <td>India</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button type="button" class="btn btn--outline specs__download">
+          Download Full Technical Datasheet
+        </button>
+      </div>
+    </section>
+
+    <section class="section features" id="about" aria-labelledby="featuresTitle">
+      <div class="container">
+        <h2 id="featuresTitle" class="section__title">Built to Last. Engineered to Perform.</h2>
+        <p class="section__subtitle">
+          From bulk bags to technical threads, Meera delivers precision solutions for every stage of your packaging process.
+        </p>
+
+        <div class="features__grid">
+          <article class="feature-card">
+            <h3>Superior Chemical Resistance</h3>
+            <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis without corroding or scaling.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Exceptional Flexibility &amp; Durability</h3>
+            <p>Withstand ground movement and thermal expansion while maintaining structural integrity.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Leak-Proof Fusion Welding</h3>
+            <p>Butt fusion joints create monolithic, leak-free connections stronger than the pipe itself.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Cost-Effective Long-Term Solution</h3>
+            <p>Lower lifecycle costs through reduced maintenance and 50+ year service life.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Environmentally Sustainable</h3>
+            <p>100% recyclable material with minimal environmental impact during production.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Certified Quality Assurance</h3>
+            <p>Manufactured to IS 5984, ISO 4427, and ASTM D3035 international standards.</p>
+          </article>
+        </div>
+
+        <button type="button" class="btn btn--primary features__cta">Request a Quote</button>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact__inner">
+        <h2 id="contactTitle" class="section__title">Ready to Transform Your Infrastructure?</h2>
+        <p class="section__subtitle">
+          Get a personalized consultation and quote tailored to your production requirements.
+        </p>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            <span class="visually-hidden">Email</span>
+            <input type="email" name="email" placeholder="your@company.com" required autocomplete="email" />
+          </label>
+          <button type="submit" class="btn btn--primary">Request Custom Quote</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <img src="assets/images/mobile_logo.svg" alt="Mangalam" width="120" height="28" />
+      <p>&copy; 2026 Mangalam Industrial Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
